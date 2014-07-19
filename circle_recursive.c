@@ -41,7 +41,7 @@ void draw_circle(float x, float y, float radius) {
       GLFWmonitor* monitor  = glfwGetPrimaryMonitor();
       const GLFWvidmode* vidmode = glfwGetVideoMode(monitor);
 
-      window = glfwCreateWindow(vidmode->width, vidmode->height, "Bouncing Ball", monitor, NULL);
+      window = glfwCreateWindow(vidmode->width, vidmode->height, "Circle Recursive", monitor, NULL);
       if(!window) {
         glfwTerminate();
         return -1;
