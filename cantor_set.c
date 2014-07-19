@@ -1,8 +1,4 @@
 #include <GLFW/glfw3.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
 
 void cantor_set(float x, float y, float length) {
 
@@ -35,7 +31,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     GLFWmonitor* monitor  = glfwGetPrimaryMonitor();
     const GLFWvidmode* vidmode = glfwGetVideoMode(monitor);
 
-    window = glfwCreateWindow(vidmode->width, vidmode->height, "Cnator Set", monitor, NULL);
+    window = glfwCreateWindow(vidmode->width, vidmode->height, "Cantor Set", monitor, NULL);
     if(!window) {
       glfwTerminate();
       return -1;
