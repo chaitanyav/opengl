@@ -23,7 +23,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 static std::string current("A");
 static int generation = 0;
 
-void generate_language() {
+void lSystemRepresentation() {
   while(generation < 8) {
     std::string next;
     for(std::string::iterator it = current.begin(); it != current.end(); it++) {
@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
   glMatrixMode(GL_MODELVIEW);
   glLoadIdentity();
 
-  generate_language();
+  lSystemRepresentation();
 
   while(!glfwWindowShouldClose(window)) {
     x = width / 4;
