@@ -1,3 +1,5 @@
+/* Author: NagaChaitanya Vellanki */
+
 #include <GLFW/glfw3.h>
 
 void cantor_set(float x, float y, float length) {

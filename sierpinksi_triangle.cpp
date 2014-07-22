@@ -1,3 +1,6 @@
+//
+// Author: NagaChaitanya Vellanki
+//
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <string>
