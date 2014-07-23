@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 
-static float LINE_LENGTH = 20.0f;
+static float LINE_LENGTH = 5.0f;
 
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
@@ -21,10 +21,10 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 // + turn  left by 90 degrees
 // - turn right by 90 degrees
 std::string sierpinskiCarpetlSystemRepresentation() {
-  std::string current("F+F+F+F");
+  std::string current("F");
   int generation = 0;
 
-  while(generation < 3) {
+  while(generation < 5) {
     std::string next;
     for(std::string::iterator it = current.begin(); it != current.end(); it++) {
       switch(*it) {
@@ -86,7 +86,7 @@ int main(int argc, char *argv[]) {
 
   while(!glfwWindowShouldClose(window)) {
     x = width / 3;
-    y = height / 4;
+    y = height / 2;
     glClear(GL_COLOR_BUFFER_BIT);
     glPushMatrix();
     for(std::string::iterator it = lrep.begin(); it != lrep.end(); it++) {
