@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
   GLFWmonitor* monitor  = glfwGetPrimaryMonitor();
   const GLFWvidmode* vidmode = glfwGetVideoMode(monitor);
 
-  window = glfwCreateWindow(vidmode->width, vidmode->height, "Sierpinski Triangle", monitor, NULL);
+  window = glfwCreateWindow(vidmode->width, vidmode->height, "Hilbert Curve", monitor, NULL);
   if(!window) {
     glfwTerminate();
     return -1;
