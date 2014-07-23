@@ -93,7 +93,7 @@ int main(int argc, char *argv[]) {
     for(std::string::iterator it = current.begin(); it != current.end(); it++) {
       if(*it == 'A' || *it == 'B') {
         glColor4f(0.5f, 1.0f, 0.0f, 1.0f);
-        glLineWidth(2.0f);
+        glLineWidth(4.0f);
         glBegin(GL_LINES);
         glVertex2f(x, y);
         x = x + LINE_LENGTH;
