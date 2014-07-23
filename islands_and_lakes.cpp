@@ -45,7 +45,7 @@ std::string islandsAndLakeslSystemRepresentation() {
 
     current = next;
     generation++;
-    std::cout << "Generation: " <<  " " << current << std::endl;
+    //std::cout << "Generation: " <<  " " << current << std::endl;
   }
 
   return current;
