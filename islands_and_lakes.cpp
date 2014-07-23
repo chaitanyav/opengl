@@ -85,13 +85,13 @@ int main(int argc, char *argv[]) {
   std::string lrep = islandsAndLakeslSystemRepresentation();
 
   while(!glfwWindowShouldClose(window)) {
-    x = width / 2;
+    x = width / 3;
     y = height / 4;
     glClear(GL_COLOR_BUFFER_BIT);
     glPushMatrix();
     for(std::string::iterator it = lrep.begin(); it != lrep.end(); it++) {
       if(*it == 'F') {
-        glColor4f(0.5f, 1.0f, 0.0f, 1.0f);
+        glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
         glLineWidth(4.0f);
         glBegin(GL_LINES);
         glVertex2f(x, y);
