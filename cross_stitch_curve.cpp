@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
   std::string lrep = crossStichCurveLSystemRepresentation();
 
   while(!glfwWindowShouldClose(window)) {
-    x = width / 3;
+    x = width / 2;
     y = height / 4;
     glClear(GL_COLOR_BUFFER_BIT);
     glPushMatrix();
