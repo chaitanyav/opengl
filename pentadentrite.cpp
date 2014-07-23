@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
   std::string lrep = pentadentritelSystemRepresentation();
 
   while(!glfwWindowShouldClose(window)) {
-    x = width / 3;
+    x = width / 3.5;
     y = height - 100.0f;
     glClear(GL_COLOR_BUFFER_BIT);
     glPushMatrix();

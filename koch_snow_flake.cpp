@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
   std::string lrep = kochSnowflakeLSystemRepresentation();
 
   while(!glfwWindowShouldClose(window)) {
-    x = width / 3;
+    x = width / 3.5;
     y = height - 350.0f;
     glClear(GL_COLOR_BUFFER_BIT);
     glPushMatrix();

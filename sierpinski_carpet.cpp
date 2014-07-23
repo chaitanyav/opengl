@@ -85,7 +85,7 @@ int main(int argc, char *argv[]) {
   std::string lrep = sierpinskiCarpetlSystemRepresentation();
 
   while(!glfwWindowShouldClose(window)) {
-    x = width / 3;
+    x = width / 3.5;
     y = height / 2;
     glClear(GL_COLOR_BUFFER_BIT);
     glPushMatrix();
