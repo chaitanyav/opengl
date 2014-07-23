@@ -18,7 +18,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 // constants : + − [ ]
 // start  : X
 // rules  : (X → F-[[X]+X]+F[+FX]-X), (F → FF)
-// angle  : 35°
+// angle  : 25°
 // - turn left by 25 degrees
 // + turn right by 25 degrees
 std::string fractalPlantLSystemRepresentation() {
