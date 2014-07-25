@@ -95,7 +95,7 @@ int main(int argc, char *argv[]) {
     for(std::string::iterator it = lrep.begin(); it != lrep.end(); it++) {
       if(*it == 'A' || *it == 'B') {
         glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-        glLineWidth(3.0f);
+        glLineWidth(5.0f);
 
         GLfloat vertices[] = {x, y, x + LINE_LENGTH, y};
         glEnableClientState(GL_VERTEX_ARRAY);
