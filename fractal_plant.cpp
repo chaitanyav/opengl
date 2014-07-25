@@ -65,11 +65,13 @@ void drawFractalPlant(float x, float y, std::string lrep) {
     if(*it == 'F') {
       glColor4f(0.5f, 1.0f, 0.0f, 1.0f);
       glLineWidth(3.0f);
-      glBegin(GL_LINES);
-      glVertex2f(x, y);
+
+      GLfloat vertices[] = {x, y, x, y + LINE_LENGTH};
+      glEnableClientState(GL_VERTEX_ARRAY);
+      glVertexPointer(2, GL_FLOAT, 0, vertices);
+      glDrawArrays(GL_LINES, 0, 4);
+      glDisableClientState(GL_VERTEX_ARRAY);
       y = y + LINE_LENGTH;
-      glVertex2f(x, y);
-      glEnd();
     }
     if(*it == '[') {
       glPushMatrix();

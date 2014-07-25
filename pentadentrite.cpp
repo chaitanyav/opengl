@@ -90,11 +90,13 @@ int main(int argc, char *argv[]) {
       if(*it == 'F') {
         glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
         glLineWidth(4.0f);
-        glBegin(GL_LINES);
-        glVertex2f(x, y);
+        GLfloat vertices[] = {x, y, x + LINE_LENGTH, y};
+
+        glEnableClientState(GL_VERTEX_ARRAY);
+        glVertexPointer(2, GL_FLOAT, 0, vertices);
+        glDrawArrays(GL_LINES, 0, 4);
+        glDisableClientState(GL_VERTEX_ARRAY);
         x = x + LINE_LENGTH;
-        glVertex2f(x, y);
-        glEnd();
       }
 
       if(*it == '-' || *it == '+') {
