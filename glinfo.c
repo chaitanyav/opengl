@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
   }
 
   glfwMakeContextCurrent(window);
-  printf("Vendor: %s\nVersion: %s\nExtensions: %s\nRenderer: %s\n", glGetString(GL_VENDOR), glGetString(GL_VERSION), glGetString(GL_EXTENSIONS), glGetString(GL_RENDERER));
+  printf("Vendor: %s\nVersion: %s\nExtensions: %s\nRenderer: %s\nGLSL Version %s\n", glGetString(GL_VENDOR), glGetString(GL_VERSION), glGetString(GL_EXTENSIONS), glGetString(GL_RENDERER), glGetString(GL_SHADING_LANGUAGE_VERSION));
   glfwTerminate();
   return 0;
 }
